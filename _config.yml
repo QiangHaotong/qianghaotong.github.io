@@ -1,45 +1,42 @@
-name: 强皓桐的兴趣课题组 Qianghaotong's Interest Research Group
-url: https://qianghaotong.github.io/
+name: 肖航课题组  Xiao Research Group
+url: https://xiaohang007.github.io/
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
-# 使用 Pygments 模块对代码片段进行语法高亮
+# colorize code snippets with the pygments module
 highlighter: pygments
 
-# 博客文章的路径结构
+# The path structure for blog posts.
 permalink: /blog/:year/:month/:day/:title.html
 encoding: utf-8
-
-# “人员”页面的角色分类
+# Sections on the "people" page.
 roles:
-  - key: highschool
-    name: 高中阶段 High School Stage
-  - key: ugrad
-    name: 本科阶段 Undergraduate Stage
+  - key: faculty
+    name: 教师 Faculty
   - key: grad
-    name: 研究生 Graduate Stage
-  - key: future
-    name: 未来发展 Future Development
+    name: 研究生 Graduate Students
+  - key: ugrad
+    name: 本科生 Undergraduate Students
+  - key: collab
+    name: 合作者 Collaborators
 
-# 主页显示的新闻条目数量
+
+# Number of news stories on the front page.
 front_page_news: 8
 
-# 链接的基本路径名
+# Base pathname for links.
 base: ''
 
-# 为 _projects 文件夹中的内容生成页面
+# make pages for the _projects folder
 collections:
   projects:
     output: true
 
-# 导航栏链接
+# Navigation bar links.
 navigation:
-  - title: 兴趣 Interests
+  - title: 主页 Home
     link: /
-  - title: 喜好 Preferences
-    link: /preferences.html
-  - title: 能力 Abilities
-    link: /abilities.html
+  - title: 科研项目 Research
     link: /research.html
   - title: 论文 Publications
     link: /publications.html
