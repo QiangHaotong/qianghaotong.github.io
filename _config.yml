@@ -1,42 +1,45 @@
-name: 肖航课题组  Xiao Research Group
-url: https://xiaohang007.github.io/
+name: 强皓桐的兴趣课题组 Qianghaotong's Interest Research Group
+url: https://qianghaotong.github.io/
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
-# colorize code snippets with the pygments module
+# 使用 Pygments 模块对代码片段进行语法高亮
 highlighter: pygments
 
-# The path structure for blog posts.
+# 博客文章的路径结构
 permalink: /blog/:year/:month/:day/:title.html
 encoding: utf-8
-# Sections on the "people" page.
+
+# “人员”页面的角色分类
 roles:
-  - key: faculty
-    name: 教师 Faculty
-  - key: grad
-    name: 研究生 Graduate Students
+  - key: highschool
+    name: 高中阶段 High School Stage
   - key: ugrad
-    name: 本科生 Undergraduate Students
-  - key: collab
-    name: 合作者 Collaborators
+    name: 本科阶段 Undergraduate Stage
+  - key: grad
+    name: 研究生 Graduate Stage
+  - key: future
+    name: 未来发展 Future Development
 
-
-# Number of news stories on the front page.
+# 主页显示的新闻条目数量
 front_page_news: 8
 
-# Base pathname for links.
+# 链接的基本路径名
 base: ''
 
-# make pages for the _projects folder
+# 为 _projects 文件夹中的内容生成页面
 collections:
   projects:
     output: true
 
-# Navigation bar links.
+# 导航栏链接
 navigation:
-  - title: 主页 Home
+  - title: 兴趣 Interests
     link: /
-  - title: 科研项目 Research
+  - title: 喜好 Preferences
+    link: /preferences.html
+  - title: 能力 Abilities
+    link: /abilities.html
     link: /research.html
   - title: 论文 Publications
     link: /publications.html
